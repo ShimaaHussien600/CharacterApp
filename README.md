@@ -5,7 +5,7 @@
 ### *NOTE: Make sure Docker is installed and running.*
 ### Build docker-compose
 shell script
-docker-compose up --build
+`docker-compose up --build`
 
 
 # TESTING
