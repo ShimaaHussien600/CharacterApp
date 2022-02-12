@@ -126,7 +126,7 @@ const TestLayOutScreen = () => {
                                         </div>
                                     </>
                                     :
-                                    <img src="img/noResultFound.png" style={{ width: '60%' }}></img>
+                                    <img src="img/noResultFound.png" style={{ width: '60%' }} alt="noResultFoundIMG"></img>
                                 )
                             }
                         </div>

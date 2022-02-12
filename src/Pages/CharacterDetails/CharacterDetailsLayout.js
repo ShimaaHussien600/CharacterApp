@@ -48,7 +48,7 @@ const CharacterDetailsLayout = () => {
                                 <div className="card mb-3" style={{ border: 0 }}>
                                     <div className="row g-0">
                                         <div className="col-md-4">
-                                            <img src={characterDetails?.image} className="img-fluid rounded-start" alt="" />
+                                            <img src={characterDetails?.image} className="img-fluid rounded-start" alt="characterDetailsIMG" />
                                         </div>
                                         <div className="col-md-8">
                                             <div className="card-body">
@@ -80,7 +80,7 @@ const CharacterDetailsLayout = () => {
                                     </div>
                                 </div>
                                 :
-                                <img src="img/noResultFound.png" style={{ width: '60%' }}></img>
+                                <img src="img/noResultFound.png" style={{ width: '60%' }} alt="noResultFoundIMG"></img>
                             )
                         }
                     </div>
