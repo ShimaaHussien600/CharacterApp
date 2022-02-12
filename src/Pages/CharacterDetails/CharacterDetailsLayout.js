@@ -39,41 +39,41 @@ const CharacterDetailsLayout = () => {
         <div style={{ height: '100%', backgroundColor: "#f1f2f4" }}>
             <Header />
 
-            <div class="container">
-                <div class="row justify-content-md-center pt-30">
-                    <div class="row justify-content-md-around justify-content-center ContentView" style={{ minHeight: '370px' }}>
+            <div className="container">
+                <div className="row justify-content-md-center pt-30">
+                    <div className="row justify-content-md-around justify-content-center ContentView" style={{ minHeight: '370px' }}>
                         {loading ? <Loader isLoading={loading} />
                             :
                             (characterDetails ?
-                                <div class="card mb-3" style={{ border: 0 }}>
-                                    <div class="row g-0">
-                                        <div class="col-md-4">
-                                            <img src={characterDetails?.image} class="img-fluid rounded-start" alt="" />
+                                <div className="card mb-3" style={{ border: 0 }}>
+                                    <div className="row g-0">
+                                        <div className="col-md-4">
+                                            <img src={characterDetails?.image} className="img-fluid rounded-start" alt="" />
                                         </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title titleText">{characterDetails?.name}</h5>
+                                        <div className="col-md-8">
+                                            <div className="card-body">
+                                                <h5 className="card-title titleText">{characterDetails?.name}</h5>
 
                                                 {characterDetails?.species &&
-                                                    <p><span class="mdText">Species : </span>{characterDetails?.species}</p>
+                                                    <p><span className="mdText">Species : </span>{characterDetails?.species}</p>
                                                 }
                                                 {characterDetails?.status &&
-                                                    <p><span class="mdText">Status : </span>{characterDetails?.status}</p>
+                                                    <p><span className="mdText">Status : </span>{characterDetails?.status}</p>
                                                 }
                                                 {characterDetails?.gender &&
-                                                    <p><span class="mdText">Gender : </span>{characterDetails?.gender}</p>
+                                                    <p><span className="mdText">Gender : </span>{characterDetails?.gender}</p>
                                                 }
                                                 {characterDetails?.type &&
-                                                    <p><span class="mdText">Type : </span>{characterDetails?.type}</p>
+                                                    <p><span className="mdText">Type : </span>{characterDetails?.type}</p>
                                                 }
                                                 {characterDetails?.location?.name &&
-                                                    <p><span class="mdText">Location Name : </span>{characterDetails?.location?.name}</p>
+                                                    <p><span className="mdText">Location Name : </span>{characterDetails?.location?.name}</p>
                                                 }
                                                 {characterDetails?.location?.type &&
-                                                    <p><span class="mdText">Location Type : </span>{characterDetails?.location?.type}</p>
+                                                    <p><span className="mdText">Location Type : </span>{characterDetails?.location?.type}</p>
                                                 }
                                                 {characterDetails?.created &&
-                                                    <p><span class="mdText">Created on : </span>{(characterDetails?.created).split("T")[0]}</p>
+                                                    <p><span className="mdText">Created on : </span>{(characterDetails?.created).split("T")[0]}</p>
                                                 }
                                             </div>
                                         </div>

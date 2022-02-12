@@ -23,33 +23,33 @@ export const CharacterCard = (props) => {
           {character?.name}
         </Typography>
         {character?.species &&
-          <div class="row">
-            <div class="col-1">
+          <div className="row">
+            <div className="col-1">
               <KeyboardDoubleArrowRightIcon htmlColor="#757575" fontSize='45px' />
             </div>
-            <div class="col-11 grayText">
-              <span>{character?.species}{character?.status != 'unknown' && ` (${character?.status})`}
+            <div className="col-11 grayText">
+              <span>{character?.species}{character?.status !== "unknown" && ` (${character?.status})`}
               </span>
             </div>
           </div>}
         {character?.location?.name &&
-          <div class="row">
-            <div class="col-1">
+          <div className="row">
+            <div className="col-1">
               <LocationOnIcon htmlColor="#757575" fontSize='45px' />
             </div>
-            <div class="col-11 grayText">
+            <div className="col-11 grayText">
               <span>{character?.location?.name}</span>
             </div>
           </div>}
         {character?.gender &&
-          <div class="row">
-            <div class="col-1">
-              {character?.gender == 'Male' ?
+          <div className="row">
+            <div className="col-1">
+              {character?.gender === "Male" ?
                 <MaleIcon htmlColor="#757575" fontSize='45px' />
                 :
                 <FemaleIcon htmlColor="#757575" fontSize='45px' />}
             </div>
-            <div class="col-11 grayText">
+            <div className="col-11 grayText">
               <span>{character?.gender}</span>
             </div>
           </div>}

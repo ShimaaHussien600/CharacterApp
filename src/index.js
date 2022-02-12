@@ -18,7 +18,7 @@ const client = new ApolloClient({
   link: httpLink,
   cache: new InMemoryCache()
 });
-console.log("client", client, httpLink)
+
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
