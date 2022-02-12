@@ -1,0 +1,29 @@
+.Nav-container {
+    height: '70px';
+    background-color: #1d4354;
+  }
+.SearchBar {
+    border-radius: 3px;
+    background-color: #2b5468;
+    border-color: #2b5468;
+    color: white;
+}
+/* .contentView {
+
+} */
+.DrkGreen {
+    background-color: #2b5468;
+}
+.m-10 {
+    margin: 10px;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.grayText {
+    color: #757575;
+}
+.darkGreenText {
+    color: #2b5468;
+}
+  

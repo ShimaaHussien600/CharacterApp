@@ -1,0 +1,27 @@
+.ContentView {
+    height: 100%;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.line {
+    border: 0;
+    background-color: #000;
+    height: 3px;
+}
+.darkGreenText {
+    color: #2b5468;
+}
+.mdText {
+    font-weight: 500;
+    color: #1d4354;
+}
+.titleText {
+    font-size: 35px;
+    color: #1d4354;
+}
+  
