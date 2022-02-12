@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: characters_app
+    image: characters_app
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/characters_app/src
+    ports:
+      - 3000:3000

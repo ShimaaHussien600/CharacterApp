@@ -1,6 +1,14 @@
-FROM node:14-alpine
+FROM node:14-alpine AS development
+ENV NODE_ENV development
+# Add a work directory
 WORKDIR /characters_app
-ENV PATH="./node_modules/.bin:$PATH"
+# Cache and Install dependencies
+COPY package.json .
+
+RUN yarn install
+# Copy app files
 COPY . .
-RUN npm run build
-CMD ["npm", "start"]
+# Expose port
+EXPOSE 3000
+# Start the app
+CMD [ "yarn", "start" ]
